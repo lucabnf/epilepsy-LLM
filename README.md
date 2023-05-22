@@ -2,7 +2,9 @@ This is the implementation code for part of the Master's Thesis on "Unsupervised
 The repository contains the code for the BENDR adaptation for seizure detection on CHB-MIT.
 
 ## Download dataset
-> ```wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/```
+```
+wget -r -N -c -np https://physionet.org/files/chbmit/1.0.0/
+```
 
 ## Run dataloader
 `load_data.py` process the CHB-MIT dataset (downloaded at the step before), considering only edf files that contain a seizure, and splitting files into data and labels.
@@ -13,4 +15,6 @@ The parameters to chose are:
 - filter: use Butterworth Bandpass filter during loading. Default=False
 
 Run this file with: 
-> ```python load_data.py --data_dir /path/to/chbmit/physionet.org/files/chbmit/1.0.0/ --data_save /path/to/save ```
+```
+python load_data.py --data_dir /path/to/chbmit/physionet.org/files/chbmit/1.0.0/ --data_save /path/to/save
+```
